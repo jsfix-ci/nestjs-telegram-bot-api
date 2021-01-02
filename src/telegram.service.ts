@@ -17,7 +17,11 @@ export class TelegramService implements OnModuleInit {
   ) {}
 
   onModuleInit() {
-    this.url = `https://api.telegram.org/bot${this.options.botKey}/`;
+    const apiUrl = this.options.apiUrl
+      ? this.options.apiUrl.replace(/\/$/, '')
+      : 'https://api.telegram.org';
+
+    this.url = `https://${apiUrl}/bot${this.options.botKey}/`;
   }
 
   private doCall<T>(
