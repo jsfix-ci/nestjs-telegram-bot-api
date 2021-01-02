@@ -3045,3 +3045,25 @@ export interface TelegramGetGameHighScoreParams {
    */
   inline_message_id?: string;
 }
+
+export interface TelegramUpdate {
+  update_id: number;
+  message?: TelegramMessage;
+  edited_message?: TelegramMessage;
+  channel_post?: TelegramMessage;
+  edited_channel_post?: TelegramMessage;
+  inline_query?: any; // TODO: add typings
+  chosen_inline_result?: any; // TODO: add typings
+  callback_query?: TelegramCallbackQuery;
+  shipping_query?: any; // TODO: add typings
+  pre_checkout_query?: any; // TODO: add typings
+  poll?: TelegramPoll;
+  poll_answer?: any; // TODO: add typings
+}
+
+export interface TelegramGetUpdates {
+  offset?: number;
+  limit?: number;
+  timeout?: number;
+  allowed_updates?: string[];
+}
