@@ -889,8 +889,8 @@ export class TelegramService implements OnModuleInit {
   }
 
   getUpdates(
-    data: Telegram.TelegramGetUpdates,
-  ): Observable<Telegram.TelegramUpdate> {
+    data?: Telegram.TelegramGetUpdatesParams,
+  ): Observable<Telegram.TelegramUpdate[] | []> {
     return this.doCall(this.getUpdates.name, data);
   }
 }

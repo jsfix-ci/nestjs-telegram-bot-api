@@ -3061,7 +3061,7 @@ export interface TelegramUpdate {
   poll_answer?: any; // TODO: add typings
 }
 
-export interface TelegramGetUpdates {
+export interface TelegramGetUpdatesParams {
   offset?: number;
   limit?: number;
   timeout?: number;
