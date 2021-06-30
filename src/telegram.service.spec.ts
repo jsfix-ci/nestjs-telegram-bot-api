@@ -522,7 +522,7 @@ describe('TelegramService', () => {
         .subscribe(telegramObserver(done, true, 1, multiPartHeader));
     });
   });
-  describe('deleteChatPhot', () => {
+  describe('deleteChatPhoto', () => {
     it('should get the response for deleteChatPhoto', (done) => {
       postMock.mockReturnValueOnce(of(axiosRes(telegramRes(true))));
       service

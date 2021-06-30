@@ -596,7 +596,7 @@ export interface TelegramVenue {
   /**
    * _Optional._ Foursquare identifier of the venue
    */
-  foursqaure_id?: string;
+  foursquare_id?: string;
   /**
    * _Optional._ Foursquare type of the venue.
    * (For example, “arts_entertainment/default”, “arts_entertainment/aquarium” or “food/icecream”.)
@@ -1236,9 +1236,9 @@ export interface TelegramSticker {
    */
   width: number;
   /**
-   * Sticker heigh
+   * Sticker height
    */
-  heigh: number;
+  height: number;
   /**
    * _Optional._ Sticker thumbnail in the .webp or .jpg format
    */
@@ -1514,7 +1514,7 @@ export interface TelegramPreCheckoutQuery {
  *************************************/
 
 /**
- * Containts information about  Passport data shared with the bot by the user
+ * Contains information about  Passport data shared with the bot by the user
  */
 export interface TelegramPassportData {
   /**
@@ -2881,7 +2881,7 @@ export interface TelegramSendInvoiceParams extends TelegramChatId {
    * URL of the product photo for the invoice. Can be a photo of the goods or a marketing image for a service.
    * People like it better when they see what they are paying for.
    */
-  phot_url?: string;
+  photo_url?: string;
   /**
    * Photo size
    */
@@ -2889,7 +2889,7 @@ export interface TelegramSendInvoiceParams extends TelegramChatId {
   /**
    * Photo width
    */
-  phot_width?: number;
+  photo_width?: number;
   /**
    * Photo height
    */
@@ -3033,7 +3033,7 @@ export interface TelegramGetGameHighScoreParams {
    */
   user_id: number;
   /**
-   * Required if inline_message_id is not specified. unique identifer for the target chat
+   * Required if inline_message_id is not specified. unique identifier for the target chat
    */
   chat_id?: number;
   /**
