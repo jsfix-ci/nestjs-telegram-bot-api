@@ -998,4 +998,10 @@ describe('TelegramService', () => {
         .subscribe(telegramObserver(done, gameScores, 1));
     });
   });
+  describe('getUpdates', () => {
+    it('should get the response for getUpdates', (done) => {
+      postMock.mockReturnValueOnce(of(axiosRes(telegramRes([]))));
+      service.getUpdates().subscribe(telegramObserver(done, [], 1));
+    });
+  });
 });
