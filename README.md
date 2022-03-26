@@ -1,3 +1,5 @@
+## Package deprecated, use nestjs-telegram instead. https://github.com/bukhalo/nestjs-telegram/discussions/330
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a><img src="https://cdn.pixabay.com/photo/2016/12/21/17/11/signe-1923369_960_720.png" alt="plus" width="100"> <a href="https://telegram.org" target="blank"><img src="https://telegram.org/img/t_logo.png" width ="140" alt="Telegram Logo"/></a>
 </p>
